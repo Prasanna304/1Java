@@ -1,0 +1,33 @@
+/*
+
+0
+909
+89098
+7890987
+678909876
+56789098765
+4567890987654
+345678909876543
+23456789098765432
+1234567890987654321
+ 
+*/
+
+package pattern;
+
+public class Pattern7 {
+
+	public static void main(String[] args) {
+		 int i,j, n=7;  
+		   System.out.println("Right angle triangle");  
+		   for(i=1;i<n;i++)  
+		   {  
+		   for(j=1;j<=i;j++)  
+		   {  
+		       System.out.print(" *");  
+		   }  
+		       System.out.println("");  
+		   }  
+	}
+
+}

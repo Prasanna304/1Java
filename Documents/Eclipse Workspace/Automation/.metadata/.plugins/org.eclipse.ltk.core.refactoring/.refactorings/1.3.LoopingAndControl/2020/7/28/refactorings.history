@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;1.2.LoopingAndControlTest&apos;&#x0A;- Original project: &apos;1.2.LoopingAndControlTest&apos;&#x0A;- Original elements:&#x0A;     e_ForTestTask.A_PrintSquare.java&#x0A;     e_ForTestTask.B_Printtriangle.java&#x0A;     e_ForTestTask.C_ReverseTriangle.java&#x0A;     e_ForTestTask.D_TripleForLoop.java" description="Delete elements" element1="/src&lt;e_ForTestTask{D_TripleForLoop.java" element2="/src&lt;e_ForTestTask{C_ReverseTriangle.java" element3="/src&lt;e_ForTestTask{A_PrintSquare.java" element4="/src&lt;e_ForTestTask{B_Printtriangle.java" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1594397720302" subPackages="false" version="1.0"/>
+</session>

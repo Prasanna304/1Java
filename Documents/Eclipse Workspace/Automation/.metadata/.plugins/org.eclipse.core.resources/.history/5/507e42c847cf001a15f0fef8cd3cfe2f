@@ -1,0 +1,9 @@
+package a_Variable;
+
+public class C_Variable3 extends B_Variable2{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int k=i+j;
+		System.out.println(k);
+	}
+}

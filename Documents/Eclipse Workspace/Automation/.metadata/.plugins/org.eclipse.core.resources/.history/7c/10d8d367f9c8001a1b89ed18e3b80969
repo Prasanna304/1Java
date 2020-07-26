@@ -1,0 +1,10 @@
+package a_Search;
+
+public class B_BinarySearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

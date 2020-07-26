@@ -1,0 +1,17 @@
+package inheritanceTest;
+
+public class HdfcTest extends RblClassTest{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		credit();
+		debit();
+		eduloan();
+		personalLoan();
+	}
+	public static void personalLoan()
+	{
+		System.out.println("Personal Loan");
+	}
+
+}

@@ -1,0 +1,16 @@
+package a_Constructor;
+
+public class Details1 {
+	
+	public Details1() {
+		int i=5;
+		int j=6;
+	}
+	
+	public static void main (String[] args) {
+		//int k=i+j; error
+		Details1 d = new Details1();
+		int z = i+j;
+	}
+
+}

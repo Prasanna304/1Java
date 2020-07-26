@@ -1,0 +1,10 @@
+package a_SingleDimentionArray;
+
+public class I_PrintOddAndEven {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

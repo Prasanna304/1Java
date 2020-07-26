@@ -1,0 +1,23 @@
+package b_List_Array;
+
+import java.util.ArrayList;
+
+public class F_ArrayListRetriveAllDataTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList a = new ArrayList();
+		a.add("aa");
+		a.add("ab");
+		a.add("ac");
+		a.add("ad");
+		int j = a.size();
+		System.out.println("Capacity is"+j);
+		System.out.println(a.get(2));
+		for(int i=0;i<a.size();i++) {
+			System.out.println(a.get(i));
+		}
+
+	}
+
+}

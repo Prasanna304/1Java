@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;a_Finalize.FinalizeTest&apos; to &apos;A_Finalize&apos;&#x0A;- Original project: &apos;3.0.Final_Finalize&apos;&#x0A;- Original element: &apos;a_Finalize.FinalizeTest&apos;&#x0A;- Renamed element: &apos;a_Finalize.A_Finalize&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FinalizeTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;a_Finalize{FinalizeTest.java[FinalizeTest" matchStrategy="1" name="A_Finalize" qualified="false" references="true" similarDeclarations="false" stamp="1595772002799" textual="false" version="1.0"/>
+</session>

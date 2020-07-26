@@ -1,0 +1,21 @@
+package c_Set;
+
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class F_LinkedHashSetTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashSet s=new LinkedHashSet();
+		s.add("d");
+		s.add("b");
+		s.add("c");
+		s.add("a");
+		s.add(null);
+		Iterator it = s.iterator();
+		while(it.hasNext())
+			System.out.println(it.next());
+	}
+
+}

@@ -1,0 +1,19 @@
+package a_ExceptionHandling;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class B_ExceptionHandling {
+
+	public static void main(String[] args) {
+		
+		//Compile Time
+		//File f = new File("");
+		//FileInputStream fis = new FileInputStream(f);
+		
+		//Run Time
+		//int i=1/0;
+		//System.out.println(i);
+	}
+
+}

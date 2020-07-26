@@ -1,0 +1,42 @@
+package b_MultiDimentionArray;
+
+public class B_MatrixIsSquare {
+	 public static void main(String []args){
+         int row;    
+         int flag = 0;    
+           
+       //Initialise matrix a    
+       int a[][] = {       
+                       {1, 2, 3},    
+                       {8, 4, 6, 4},    
+                       {4, 5, 7, 5, 6}    
+                   };    
+             
+         //Initialise matrix b    
+       int b[][] = {       
+                       {1, 2, 3},    
+                       {8, 4, 6},    
+                       {4, 5, 7}    
+           };    
+           
+       row = a.length;    
+       int col1 = a[0].length; 
+       int col2 = a[1].length;
+       int col3 = a[2].length;
+       System.out.println(row+" "+col1+" "+col2+" "+col3);
+       
+       row = a.length;
+       for(int i=0; i<row-1; i++){
+           for (int j=1; j<row; j++){
+               if(b[i].length!=b[j].length){
+                   flag=1;
+                   break;
+               }
+           }
+       }
+       if (flag==0)
+        System.out.println("Pass");
+       else
+        System.out.println("Fail");
+    }
+}

@@ -1,0 +1,63 @@
+1595525303464	Rename package 'A_TextFile'
+1595525934715	Delete element
+1595526258296	Rename type 'TextFileLineByLine'
+1595526406255	Move files
+1595526684055	Rename type 'TestFileExistingContentWriteTest'
+1595526878601	Rename type 'TextFileReaderTest'
+1595526890070	Rename type 'D_ExistingFileContentWrite'
+1595526902668	Rename type 'E_FileReaderTest'
+1595526907590	Delete element
+1595526996213	Copy file
+1595527008163	Rename type 'E_TextFileReaderTest'
+1595527202960	Copy compilation unit
+1595527222905	Rename type 'F_TextFileMultiReader'
+1595527271066	Copy file
+1595527375657	Rename type 'TextFileMultiReaderTest'
+1595527401196	Copy file
+1595529699504	Rename type 'TaskTest'
+1595529766371	Delete element
+1595529821852	Rename type 'TextFileNumberTest'
+1595529968216	Rename type 'TextFileCharTest'
+1595600475118	Move file
+1595600525236	Rename type 'PropertyTestPrintAll'
+1595600663756	Copy file
+1595603019449	Rename resource 'B_ExcelFile.xlxs'
+1595603068109	Rename resource 'B_ExcelFile.xlsx'
+1595603083761	Delete element
+1595604312887	Rename type 'ExcelSingleReadTest'
+1595604384179	Copy file
+1595606424131	Rename type 'ExcelReadAllTest'
+1595606449834	Copy file
+1595606541002	Rename type 'ExcelNumericCellTest'
+1595606562559	Rename resource 'TestNum.xlsx'
+1595609628308	Rename type 'ExcelNullCell'
+1595609714341	Rename resource 'TestNull.xlsx'
+1595611374260	Copy file
+1595611392191	Rename type 'UpdateCellTest'
+1595611677170	Rename type 'CreateExcelTest'
+1595611686703	Rename resource 'G_UpdateCellTest.xlsx'
+1595611708943	Rename type 'G_UpdateCellTest'
+1595615180255	Rename type 'ExcelTaskTest'
+1595666426070	Delete element
+1595680619115	Delete element
+1595680702950	Delete element
+1595680752183	Delete element
+1595681562558	Delete elements
+1595682340687	Delete elements
+1595682385408	Copy compilation unit
+1595693872242	Delete element
+1595693897689	Delete element
+1595698660804	Delete element
+1595698744498	Delete element
+1595698804950	Delete element
+1595699077293	Delete element
+1595699148089	Delete element
+1595699182969	Delete element
+1595699290164	Delete element
+1595699536377	Delete element
+1595699645450	Delete element
+1595699725634	Delete element
+1595699790163	Delete element
+1595700358943	Delete element
+1595700410345	Delete element
+1595700542523	Delete element

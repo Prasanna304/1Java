@@ -1,0 +1,10 @@
+package a_SingleDimentionArray;
+
+public class E_OddAndEvenPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

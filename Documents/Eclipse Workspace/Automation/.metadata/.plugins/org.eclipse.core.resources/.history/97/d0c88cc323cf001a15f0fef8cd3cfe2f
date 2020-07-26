@@ -1,0 +1,347 @@
+/*
+ 
+ * 	Lets see the CreationHelper and CellStyle
+ 
+ *  CreationHelper
+ 		* AreaReference	-> createAreaReference(CellReference topLeft, CellReference bottomRight)
+				Creates an area ref from a pair of Cell References..
+ 		* AreaReference	-> createAreaReference(java.lang.String reference)
+ 				Creates an AreaReference.
+ 		* ClientAnchor -> createClientAnchor()
+ 		 		Creates a ClientAnchor.
+ 		* DataFormat -> createDataFormat()
+ 				Creates a new DataFormat instance
+ 		* ExtendedColor -> createExtendedColor()
+ 				Creates a XSSF-style Color object, used for extended sheet formattings and conditional formattings
+ 		* FormulaEvaluator -> createFormulaEvaluator()
+ 				Creates FormulaEvaluator - an object that evaluates formula cells.
+ 		* Hyperlink	createHyperlink(HyperlinkType type)
+ 				Creates a new Hyperlink, of the given type
+ 		* RichTextString	createRichTextString(java.lang.String text)
+ 		 		Creates a new RichTextString instance 
+ 		
+ */
+
+/*
+  
+ * Modifier and Type		Method and Description
+	void					cloneStyleFrom(CellStyle source)
+							Clones all the style information from another CellStyle, onto this one.
+							
+	HorizontalAlignment		getAlignment()
+							get the type of horizontal alignment for the cell
+							
+	HorizontalAlignment		getAlignmentEnum()
+							Deprecated. 
+							use getAlignment() instead
+
+	BorderStyle				getBorderBottom()
+							get the type of border to use for the bottom border of the cell
+							
+	BorderStyle				getBorderBottomEnum()
+							Deprecated. 
+							use getBorderBottom() instead
+
+	BorderStyle				getBorderLeft()
+							get the type of border to use for the left border of the cell
+
+	BorderStyle				getBorderLeftEnum()
+							Deprecated. 
+							use getBorderLeft() instead
+
+	BorderStyle				getBorderRight()
+							get the type of border to use for the right border of the cell
+
+	BorderStyle				getBorderRightEnum()
+							Deprecated. 	
+							use getBorderRight() instead
+
+	BorderStyle				getBorderTop()
+							get the type of border to use for the top border of the cell
+
+	BorderStyle				getBorderTopEnum()
+							Deprecated. 
+							use getBorderTop() instead
+
+	short					getBottomBorderColor()
+							get the color to use for the left border
+
+	short					getDataFormat()
+							get the index of the data format.
+
+	java.lang.String		getDataFormatString()
+							Get the format string
+
+	short					getFillBackgroundColor()
+							get the background fill color, if the fill is defined with an indexed color.
+
+	Color					getFillBackgroundColorColor()
+							Gets the color object representing the current background fill, resolving indexes using the supplied workbook.
+
+	short					getFillForegroundColor()
+							get the foreground fill color, if the fill is defined with an indexed color.
+
+	Color					getFillForegroundColorColor()
+							Gets the color object representing the current foreground fill, resolving indexes using the supplied workbook.
+
+	FillPatternType			getFillPattern()
+							Get the fill pattern
+
+	FillPatternType			getFillPatternEnum()
+							Deprecated. 
+							use getFillPattern() instead
+
+	short					getFontIndex()
+							Deprecated. 
+							use getFontIndexAsInt() instead
+
+	int						getFontIndexAsInt()
+							gets the index of the font for this style
+
+	boolean					getHidden()
+							get whether the cell's using this style are to be hidden
+
+	short					getIndention()
+							get the number of spaces to indent the text in the cell
+
+	short					getIndex()
+							get the index within the Workbook (sequence within the collection of ExtnededFormat objects)
+
+	short					getLeftBorderColor()
+							get the color to use for the left border
+
+	boolean					getLocked()
+							get whether the cell's using this style are to be locked
+
+	boolean					getQuotePrefixed()
+							Is "Quote Prefix" or "123 Prefix" enabled for the cell? Having this on is somewhat (but not completely, see IgnoredErrorType) like prefixing the cell value with a ' in Excel
+
+	short					getRightBorderColor()
+							get the color to use for the left border
+
+	short					getRotation()
+							get the degree of rotation for the text in the cell.
+
+	boolean					getShrinkToFit()
+							Should the Cell be auto-sized by Excel to shrink it to fit if this text is too long?
+
+	short					getTopBorderColor()
+							get the color to use for the top border
+
+	VerticalAlignment		getVerticalAlignment()
+							get the type of vertical alignment for the cell
+
+	VerticalAlignment		getVerticalAlignmentEnum()
+							Deprecated. 
+							use getVerticalAlignment() instead
+
+	boolean					getWrapText()
+							get whether the text should be wrapped
+
+	void					setAlignment(HorizontalAlignment align)
+							set the type of horizontal alignment for the cell
+
+	void					setBorderBottom(BorderStyle border)
+							set the type of border to use for the bottom border of the cell
+
+	void					setBorderLeft(BorderStyle border)
+							set the type of border to use for the left border of the cell
+
+	void					setBorderRight(BorderStyle border)
+							set the type of border to use for the right border of the cell
+
+	void					setBorderTop(BorderStyle border)
+							set the type of border to use for the top border of the cell
+	
+	void					setBottomBorderColor(short color)
+							set the color to use for the bottom border
+
+	void					setDataFormat(short fmt)
+							set the data format (must be a valid format).
+
+	void					setFillBackgroundColor(short bg)
+							set the background fill color.
+
+	void					setFillForegroundColor(short bg)
+							set the foreground fill color Note: Ensure Foreground color is set prior to background color.
+
+	void					setFillPattern(FillPatternType fp)
+							setting to one fills the cell with the foreground color...
+
+	void					setFont(Font font)
+							set the font for this style
+
+	void					setHidden(boolean hidden)
+							set the cell's using this style to be hidden
+
+	void					setIndention(short indent)
+							set the number of spaces to indent the text in the cell
+
+	void					setLeftBorderColor(short color)
+							set the color to use for the left border
+
+	void					setLocked(boolean locked)
+							set the cell's using this style to be locked
+
+	void					setQuotePrefixed(boolean quotePrefix)
+							Turn on or off "Quote Prefix" or "123 Prefix" for the style, which is used to tell Excel that the thing which looks like a number or a formula shouldn't be treated as on.
+
+	void					setRightBorderColor(short color)
+							set the color to use for the right border
+
+	void					setRotation(short rotation)
+							set the degree of rotation for the text in the cell.
+
+	void					setShrinkToFit(boolean shrinkToFit)
+							Controls if the Cell should be auto-sized to shrink to fit if the text is too long
+
+	void					setTopBorderColor(short color)
+							set the color to use for the top border
+
+	void					setVerticalAlignment(VerticalAlignment align)
+							set the type of vertical alignment for the cell
+
+	void					setWrapText(boolean wrapped)
+							Set whether the text should be wrapped. 
+  
+ */
+
+package c_ExcelFile;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+
+import org.apache.poi.ss.usermodel.BorderStyle;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CreationHelper;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.util.CellRangeAddress;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class K_ExcelTableCreationWithFormat {
+
+	public static void main(String[] args) throws IOException {
+		// To store the file location 
+		File f = new File("/Users/Personal/Documents/Eclipse Workspace/Automation/2.4.FileHandling/File/Excel/K_ExcelTableCreationWithFormat.xlsx");
+		// This is used to write data to a destination
+		FileOutputStream fos = new FileOutputStream(f);
+		// To goto workbook
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		// This helps to format the cells
+        CreationHelper createHelper = workbook.getCreationHelper();  
+        // To create a sheet
+		XSSFSheet sheet = workbook.createSheet("Sheet1"); 
+		// To create a row
+		XSSFRow row = sheet.createRow(0);
+		// To create a cell
+		XSSFCell cell = row.createCell(0);
+		// Cellstyles is use to style the cells 
+        CellStyle cellStyleDate = workbook.createCellStyle();
+       
+        // This sets the format as dates
+        cellStyleDate.setDataFormat(createHelper.createDataFormat().getFormat("dd/mm/yyyy hh:mm"));
+        cell.setCellValue(new Date(2010,12,30,10,20));  
+        cell.setCellStyle(cellStyleDate);
+        cell = row.createCell(1);  
+        cell.setCellValue(new Date());  
+        cell.setCellStyle(cellStyleDate);  
+        
+        // This is to Align the cell 
+        CellStyle cellStyleAlign = workbook.createCellStyle();
+        cell = row.createCell(2);
+        cellStyleAlign.setAlignment(CellStyle.ALIGN_RIGHT);
+        cell.setCellValue(100);
+        cell.setCellStyle(cellStyleAlign);
+        
+        
+        CellStyle cellStyleAlign1 = workbook.createCellStyle();
+        cell = row.createCell(3);
+        cellStyleAlign1.setAlignment(CellStyle.ALIGN_CENTER);
+        cell.setCellValue(300);
+        cell.setCellStyle(cellStyleAlign1);
+        
+        
+        CellStyle style1 = workbook.createCellStyle();
+        row = sheet.createRow(1);   
+        cell = row.createCell(4);  
+        sheet.setColumnWidth(0, 8000);  
+        cell.setCellValue("Top Left");  
+        row.setHeight((short) 800);
+        cell.setCellStyle(style1);   
+        cell.setCellValue(400);
+       
+        
+        CellStyle style2 = workbook.createCellStyle();
+        row = sheet.createRow(2);   
+        cell = row.createCell(5);
+        style2.setBorderBottom(XSSFCellStyle.BORDER_MEDIUM); 
+        style2.setBottomBorderColor(IndexedColors.BLACK.getIndex());  
+        style2.setBorderRight(XSSFCellStyle.BORDER_THICK);  
+        style2.setRightBorderColor(IndexedColors.BLUE.getIndex());  
+        style2.setBorderTop(XSSFCellStyle.BORDER_DASH_DOT);  
+        style2.setTopBorderColor(IndexedColors.BLACK.getIndex());  
+        cell.setCellStyle(style2); 
+        cell.setCellValue(500);
+        
+        
+        CellStyle style3 = workbook.createCellStyle();
+        style3.setFillBackgroundColor(IndexedColors.RED.getIndex());
+        style3.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+        style3.setFillPattern(CellStyle.SOLID_FOREGROUND);      
+        row = sheet.createRow(3);   
+        cell = row.createCell(1);
+        cell.setCellStyle(style3); 
+        cell.setCellValue(600);
+        
+        /* 
+         * You have two styles, one named backgroundStyle, and the other named borderStyle. 
+         * You then apply both styles to the same cell, but a cell can only have one style, 
+         * So instead of adding the second style, you are overwriting the first style with the second style.
+         * Instead of:
+		        CellStyle style3 = workbook.createCellStyle();
+		        style3.setFillBackgroundColor(IndexedColors.RED.getIndex());
+		        style3.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+		        style3.setFillPattern(CellStyle.SOLID_FOREGROUND);      
+		        row = sheet.createRow(3);   
+		        cell = row.createCell(1);
+		        cell.setCellStyle(style3); 
+		        cell.setCellStyle(style2); 
+		        cell.setCellValue(600);
+         * This this :		        	
+         */
+        
+        CellStyle style4 = workbook.createCellStyle();
+        style4.setFillBackgroundColor(IndexedColors.RED.getIndex());
+        style4.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+        style4.setFillPattern(CellStyle.SOLID_FOREGROUND);   
+        style4.setBorderBottom(XSSFCellStyle.BORDER_MEDIUM); 
+        style4.setBottomBorderColor(IndexedColors.BLACK.getIndex());  
+        style4.setBorderRight(XSSFCellStyle.BORDER_THICK);  
+        style4.setRightBorderColor(IndexedColors.BLUE.getIndex());  
+        style4.setBorderTop(XSSFCellStyle.BORDER_DASH_DOT);  
+        style4.setTopBorderColor(IndexedColors.BLACK.getIndex());    
+        cell = row.createCell(2);
+        cell.setCellStyle(style4); 
+        cell.setCellValue(700);
+        
+        
+        row = sheet.createRow(4);   
+        cell = row.createCell(1);
+        cell.setCellValue("Two cells have merged");  
+        //Merging cells by providing cell index  
+        sheet.addMergedRegion(new CellRangeAddress(0,1,2,3));  
+        
+        
+		workbook.write(fos);
+		fos.close();	
+		System.out.println("Done");
+	}
+
+}

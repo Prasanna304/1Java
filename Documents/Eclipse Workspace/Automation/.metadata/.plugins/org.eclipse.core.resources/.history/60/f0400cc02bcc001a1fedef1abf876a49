@@ -1,0 +1,10 @@
+package h_polymorphism;
+
+public class E_ParrentOverrideTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package h_polymorphism;
+
+public class D_Overload2 {
+
+	public static void main(String[] args) {
+
+		add(1,2);
+		add(1,2,"3");
+		add(1,2,3);
+
+	}
+	public static void add(int i, int j) {	
+		int k = i+j;
+		System.out.println(k);
+	}
+	
+	public static void add(int i, int j, String k) {
+		int l = i+j;
+		System.out.println(l+k);
+	}
+	
+	public static void add(int i, int j, int k) {
+		int l = i+j;
+		System.out.println(l+k);
+	}
+
+}

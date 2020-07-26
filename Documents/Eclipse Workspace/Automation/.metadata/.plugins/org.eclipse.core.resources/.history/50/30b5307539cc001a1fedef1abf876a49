@@ -1,0 +1,19 @@
+package listTest;
+
+import java.util.ArrayList;
+
+public class ArrayListUserIndexTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList a = new ArrayList();
+		a.add(0,"aa");
+		a.add(1,"ab");
+		a.add("ac");
+		a.add("ad");
+		int i = a.size();
+		System.out.println("Capacity is"+i);
+		System.out.println(a.get(2));
+	}
+
+}

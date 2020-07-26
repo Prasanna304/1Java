@@ -1,0 +1,29 @@
+package a_TextFile;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class C_TextFileLineByLine {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		File f = new File("/Users/Personal/Documents/Eclipse Workspace/Automation/2.4.FileHandling/File/C_TextFileLineByLine.txt");
+		if(!f.exists()) {
+			f.createNewFile();
+		}
+		FileWriter fw = new FileWriter(f);
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write("vcentrya");
+		bw.newLine();
+		bw.write("vcentryb");
+		bw.newLine();
+		bw.write("vcentryc");
+		bw.newLine();
+		bw.write("vcentryd");
+		bw.newLine();
+		bw.close();
+	}
+
+}

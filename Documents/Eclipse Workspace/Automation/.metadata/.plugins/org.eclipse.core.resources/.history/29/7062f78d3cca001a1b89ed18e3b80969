@@ -1,0 +1,16 @@
+package f_Interface;
+
+public interface RbiTest {
+
+	public void credit() {
+		System.out.println("Credit");
+	}
+
+	public void debit() {
+		System.out.println("Debit");
+	}
+	
+	public void loan() {
+		System.out.println("Loan");
+	}
+}

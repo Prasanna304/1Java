@@ -1,0 +1,22 @@
+/*
+ * Interface contains abstract functions
+ * Need to create with Interface keyword
+ * 		Package -> Right click -> new -> interface -> Name: RbiTest
+ */
+
+package f_Interface;
+
+public interface InterfaceIntro {
+
+	public static void credit() {
+		System.out.println("Credit");
+	}
+
+	public static void debit() {
+		System.out.println("Debit");
+	}
+	
+	public static void loan() {
+		System.out.println("Loan");
+	}
+}

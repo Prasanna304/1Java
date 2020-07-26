@@ -1,0 +1,18 @@
+package b_List_Array;
+
+import java.util.ArrayList;
+
+public class A_ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		// Generic 
+		// Can allow all datatype
+		ArrayList a= new ArrayList();
+		
+		// Specific
+		// Specific string only used
+		ArrayList<String> b = new ArrayList<String>();
+	}
+
+}

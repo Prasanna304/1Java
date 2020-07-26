@@ -1,0 +1,29 @@
+/*
+ * Difference between builder and buffer
+ */
+
+
+package a_StringLiterals;
+
+public class B_StringBuilterBuffer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "abc";
+		String b = "def";
+		a.concat(b);
+		System.out.println(a);	//concat doesnot change the memory so can't store value 
+		System.out.println(a.concat(b));
+		//string are imutable => freese after creation of memory
+		//to make strings mutable i.e create & can expande the memory
+		//					=> we can use string builder and string buffer
+		StringBuffer sbuffer = new StringBuffer("abc");
+		sbuffer.append("def"); //append and change the memory
+		System.out.println(sbuffer);
+		StringBuilder sbuilder = new StringBuilder("abc");
+		sbuilder.append("def");
+		System.out.println(sbuilder);
+		
+	}
+
+}

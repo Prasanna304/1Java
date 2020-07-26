@@ -1,0 +1,14 @@
+package encspsulationTest;
+
+public class GpayTest {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		EncapTest e= new EncapTest();
+		e.setaccno(123);
+		System.out.println(e.getaccno());
+		e.setAmount(1234);
+		System.out.println(e.getAmount());
+	}
+
+}

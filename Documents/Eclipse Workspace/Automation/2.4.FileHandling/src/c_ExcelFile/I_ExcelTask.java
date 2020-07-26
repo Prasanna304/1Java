@@ -1,0 +1,28 @@
+package c_ExcelFile;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class I_ExcelTask {
+
+	public static void main(String[] args) throws IOException {
+		File f = new File("/Users/Personal/Documents/Eclipse Workspace/Automation/2.4.FileHandling/File/Excel/I_ExcelTask.xlsx");
+		FileOutputStream fos = new FileOutputStream(f);
+		XSSFWorkbook workbook = new XSSFWorkbook();
+		XSSFSheet sheet = workbook.createSheet("Sheet1"); 
+		for(int i=0;i<=100;i++) {
+		XSSFRow row = sheet.createRow(i);
+		XSSFCell cell = row.createCell(0);
+		cell.setCellValue(i);
+		}
+		workbook.write(fos);
+		fos.close();		
+	}
+
+}

@@ -1,0 +1,19 @@
+package polyTest;
+
+public class ChildOverrideWithBothTest extends E_ParrentOverrideTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		G_ChildOverrideWithSuperClass c = new G_ChildOverrideWithSuperClass();
+		E_ParrentOverrideTest d= new G_ChildOverrideWithSuperClass();
+		d.exe();
+		c.exe();
+	}
+	public static void add() {
+		System.out.println("child add");
+	}
+	public void exe() {
+		add();
+		super.add();
+	}
+}

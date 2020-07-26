@@ -1,0 +1,19 @@
+package finalizeTest;
+
+public class FinalizeTest {
+	public void finalize() {
+		System.out.println("finalize called");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FinalizeTest f1 = new FinalizeTest();
+		f1 = null;
+		System.gc();//if i didn't give default gc
+					//default finalize() call because its a predefined function
+					//if i give gc
+					//user defined finalize() will call
+		
+	}
+
+}

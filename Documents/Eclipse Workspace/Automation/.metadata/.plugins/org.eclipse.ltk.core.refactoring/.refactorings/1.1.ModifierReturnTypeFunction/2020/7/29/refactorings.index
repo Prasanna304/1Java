@@ -1,0 +1,20 @@
+1594537558597	Copy compilation units
+1594537590067	Rename type 'PrivateClassTest'
+1594537605707	Rename type 'PrivateClassTest1'
+1594538491216	Copy compilation unit
+1594538864431	Rename type 'PrivateClassTest2'
+1594539033390	Copy packages
+1594539065682	Rename package 'b_AccessModifier_Private.copy'
+1594539088508	Rename package 'b_AccessModifier_Private1.copy'
+1594539105651	Rename package 'b_AccessModifier_Public1'
+1594539552525	Rename type 'PrivateClassTest1'
+1594539568368	Rename type 'publicClassTest'
+1594556827558	Rename type 'PrivateClassTest2'
+1594572371213	Copy packages
+1594612112427	Rename type 'DefaultClassTest'
+1594612134881	Rename type 'DefaultClassTest1'
+1594612153958	Rename type 'DefaultClassTest2'
+1594612515655	Rename type 'ProductedClassTest'
+1594612532337	Rename type 'ProductedClassTest1'
+1594612545351	Rename type 'ProductedClassTest2'
+1594613024769	Rename package 'd_AccessModifier_Producted'

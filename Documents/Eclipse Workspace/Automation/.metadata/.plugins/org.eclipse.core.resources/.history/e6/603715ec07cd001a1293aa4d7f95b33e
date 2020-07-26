@@ -1,0 +1,10 @@
+package stringJavaPrograms2;
+
+public class I_DuplicateWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

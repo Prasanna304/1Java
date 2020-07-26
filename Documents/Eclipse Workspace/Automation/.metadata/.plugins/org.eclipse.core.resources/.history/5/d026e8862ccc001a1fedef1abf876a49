@@ -1,0 +1,19 @@
+package polyTest;
+
+public class ChildOverrideTest extends E_ParrentOverrideTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		add();
+	}
+	/*public static void add() {
+		// TODO Auto-generated method stub
+		System.out.println("Child Test");
+	}*/
+	/*
+	 * 1st add() => shows error => so add extents
+	 * 1st check child (current class), if there is no add() in current then goto parrent
+	 *if run prog by commenting these lines shows parrent 
+	 *if run prog by without commenting these lines shows child 
+	 */
+}

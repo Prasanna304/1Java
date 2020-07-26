@@ -1,0 +1,16 @@
+package listTest;
+
+import java.util.ArrayList;
+
+public class ArrayListInsertDataTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList a = new ArrayList();
+		a.add("aa");
+		a.add("ab");
+		a.add("ac");
+		a.add("ad");
+	}
+
+}

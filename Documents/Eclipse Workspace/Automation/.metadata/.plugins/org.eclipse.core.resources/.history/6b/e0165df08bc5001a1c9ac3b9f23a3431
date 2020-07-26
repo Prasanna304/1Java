@@ -1,0 +1,10 @@
+package a_SingleDimentionArray;
+
+public class B_FrequencyOfElement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

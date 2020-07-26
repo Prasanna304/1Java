@@ -1,0 +1,18 @@
+package b_Object;
+
+class Students{  
+	 int rollno;  
+	 String name;  
+	 void insertRecord(int r, String n){  
+	  rollno=r;  
+	  name=n;  
+}  
+	 
+public class E_InitializeObjectByMethod {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

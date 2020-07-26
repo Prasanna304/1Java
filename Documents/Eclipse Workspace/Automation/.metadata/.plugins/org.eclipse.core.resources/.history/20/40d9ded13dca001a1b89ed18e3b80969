@@ -1,0 +1,12 @@
+/*
+ * Interface contains abstract functions
+ * Need to create with Interface keyword
+ * 		Package -> Right click -> new -> interface -> Name: InterfaceIntro
+ * 
+ */
+
+package f_Interface;
+
+public interface InterfaceIntro {
+
+}

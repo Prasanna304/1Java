@@ -1,0 +1,10 @@
+package b_Object;
+
+public class D_InitializeObjectByReferenceVariable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
